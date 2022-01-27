@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #e5e5e5;
+}
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100vw;
+  height: 4.6rem;
+  justify-content: space-evenly;
+}
+
+header .items {
+  list-style: none;
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+}
+header .items a {
+  text-decoration: none !important;
+  color: #131212;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+header .icons {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 2rem;
+  gap: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 80vw;
+}
+section {
+  padding-left: 8vw;
+  padding-top: 5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 33vw;
+}
+section .informations .categorie {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #131212;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+section .informations h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #131212;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: 0.2rem;
+}
+
+section .informations .description {
+  font-family: 'Arimo', sans-serif;
+  color: #131212;
+  opacity: 0.5;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 48.8rem;
+  height: 6rem;
+  margin-top: 1.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+section .informations .video {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+}
+section .informations .video span {
+  text-decoration: none !important;
+  margin-left: 1rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #131212;
+}
+section .picture {
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  padding-left: 22vw;
+  padding-top: 12rem;
+}
+
+aside {
+  padding-left: 45vw;
+  padding-top: 8rem;
+}
+aside p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #131212;
+  padding-bottom: 2rem;
+}
+
+aside .sizes {
+  padding-bottom: 2.5rem;
+  border-spacing: 0.8rem;
+}
+
+aside .sizes button {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  background-color: #e7e3e3;
+  width: 4rem;
+  height: 4rem;
+  transition: filter 0.2s;
+  cursor: pointer;
+  border-width: 0.1rem;
+  border-color: #e4dcdc;
+}
+
+aside .colors {
+  padding-bottom: 2rem;
+}
+
+aside .colors button {
+  margin-left: 0.6rem;
+  border-radius: 50%;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  transition: filter 0.2s;
+  cursor: pointer;
+}
+aside .colors button{
+  border: 2px solid transparent;
+}
+aside .colors button.selected{
+  border: 2px solid #000;
+  opacity: 0.5
+}
+aside .colors #brown {
+  background-color: #b6a179;
+}
+
+aside .colors #black {
+  background-color: #272425;
+}
+aside .colors #blue {
+  background-color: #6389cb;
+}
+aside .colors #yellow {
+  background-color: #f2c758;
+}
+aside .colors #white {
+  background-color: #ffffff;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10rem;
+  padding-top: 15rem;
+}
+
+footer button {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  border: none;
+  background-color: #e5e5e5;
+  margin-left: 1rem;
+}
+
+footer .prev button {
+  margin-right: 5rem;
+  cursor: pointer;
+}
+footer .nxt button {
+  cursor: pointer;
+}
+footer p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 60vw;
+}
+
+aside .sizes button.selectButton {
+  background-color: #b1b1b1;
+}

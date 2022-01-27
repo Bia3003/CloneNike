@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nike air edge</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <img src="images/logo.svg" alt="Nike" class="logo" />
+        <div id="menu">
+          <ul id="items" class="items">
+            <li>
+              <a href="*.html" class="categories">NEW RELEASES</a>
+            </li>
+            <li>
+              <a href="*.html" class="categories">MEN</a>
+            </li>
+            <li>
+              <a href="*.html" class="categories">WOMEN</a>
+            </li>
+            <li>
+              <a href="*.html" class="categories">KIDS</a>
+            </li>
+            <li>
+              <a href="*.html" class="categories">CUSTOMIZE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="icons">
+          <img src="images/user.svg" alt="user" />
+          <img src="images/bag.svg" alt="bag" />
+        </div>
+      </header>
+      <div class="container">
+        <section>
+          <div class="informations">
+            <p class="categorie">MEN'S SHOES</p>
+            <h2>NIKE AIR EDGE</h2>
+            <p class="description">
+              The Nike Air Edge 270 takes the look of retro<br />
+              basketball and puts it through a modern lens
+            </p>
+            <a
+              href="https://www.youtube.com/watch?v=hYD3XSnkfzA"
+              target="blank"
+              class="video"
+            >
+              <img src="./images/play_icon.svg" alt="Play video" />
+              <span>PLAY VIDEO</span>
+            </a>
+          </div>
+          <div class="picture">
+            <img
+              src="./images/nike_brown.png"
+              alt="Tênis Marrom"
+              id="changeShoesByColor"
+              class="pictureImg"
+            />
+          </div>
+        </section>
+        <aside>
+          <p>SELECT SIZE (US)</p>
+          <table class="sizes">
+            <tr>
+              <td>
+                <button onclick="changeButtonColorByClick(this)">8.0</button>
+              </td>
+              <td>
+                <button onclick="changeButtonColorByClick(this)">8.5</button>
+              </td>
+              <td>
+                <button onclick="changeButtonColorByClick(this)">9.0</button>
+              </td>
+              <td>
+                <button onclick="changeButtonColorByClick(this)">9.5</button>
+              </td>
+              <td>
+                <button onclick="changeButtonColorByClick(this)">10.0</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onclick="changeButtonColorByClick(this)">10.5</button>
+              </td>
+              <td>
+                <button onclick="changeButtonColorByClick(this)">11.0</button>
+              </td>
+              <td>
+                <button onclick="changeButtonColorByClick(this)">11.5</button>
+              </td>
+              <td>
+                <button onclick="changeButtonColorByClick(this)">12.0</button>
+              </td>
+              <td>
+                <button onclick="changeButtonColorByClick(this)">12.5</button>
+              </td>
+            </tr>
+          </table>
+          <p>SELECT COLOR</p>
+          <div class="colors">
+            <button id="brown" class="selected"></button>
+            <button id="black"></button>
+            <button id="blue"></button>
+            <button id="yellow"></button>
+            <button id="white"></button>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <div class="prev">
+        <button class="btn" onclick="prev()">PREV</button><br />
+        <img src="./images/arrowleft.svg" alt="Seta para anterior" />
+      </div>
+      <div class="nxt">
+        <button class="btn" onclick="next()">NEXT</button><br />
+        <img src="./images/arrowright.svg" alt="Seta para próximo" />
+      </div>
+      <p>ADD TO CARD - $95.97</p>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
