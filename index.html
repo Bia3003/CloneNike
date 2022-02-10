@@ -19,25 +19,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <header id="header">
+    <div class="container">
+    
+      <header>
+        <div class="menu-mobile">
+          <button id="btn-mobile">
+            <img src="images/menu_icon.png" alt="menu"/>
+          </button>
+        </div>
         <img src="images/logo.svg" alt="Nike" class="logo" />
-        <div id="menu">
-          <ul id="items" class="items">
+        <div  id="menu">
+          <ul class="items">
             <li>
-              <a href="*.html" class="categories">NEW RELEASES</a>
+              <a href="#" class="categories">NEW RELEASES</a>
             </li>
             <li>
-              <a href="*.html" class="categories">MEN</a>
+              <a href="#" class="categories">MEN</a>
             </li>
             <li>
-              <a href="*.html" class="categories">WOMEN</a>
+              <a href="#" class="categories">WOMEN</a>
             </li>
             <li>
-              <a href="*.html" class="categories">KIDS</a>
+              <a href="#" class="categories">KIDS</a>
             </li>
             <li>
-              <a href="*.html" class="categories">CUSTOMIZE</a>
+              <a href="#" class="categories">CUSTOMIZE</a>
             </li>
           </ul>
         </div>
@@ -46,10 +52,10 @@
           <img src="images/bag.svg" alt="bag" />
         </div>
       </header>
-      <div class="container">
+      <main>
         <section>
           <div class="informations">
-            <p class="categorie">MEN'S SHOES</p>
+            <span>MEN'S SHOES</span>
             <h2>NIKE AIR EDGE</h2>
             <p class="description">
               The Nike Air Edge 270 takes the look of retro<br />
@@ -58,7 +64,6 @@
             <a
               href="https://www.youtube.com/watch?v=hYD3XSnkfzA"
               target="blank"
-              class="video"
             >
               <img src="./images/play_icon.svg" alt="Play video" />
               <span>PLAY VIDEO</span>
@@ -120,19 +125,20 @@
             <button id="white"></button>
           </div>
         </aside>
-      </div>
-    </main>
-    <footer>
-      <div class="prev">
-        <button class="btn" onclick="prev()">PREV</button><br />
-        <img src="./images/arrowleft.svg" alt="Seta para anterior" />
-      </div>
-      <div class="nxt">
-        <button class="btn" onclick="next()">NEXT</button><br />
-        <img src="./images/arrowright.svg" alt="Seta para próximo" />
-      </div>
-      <p>ADD TO CARD - $95.97</p>
-    </footer>
+      </main>
+      <footer>
+        <div class="buttons">
+          <div class="prev">
+            <button class="btn" onclick="prev()">PREV <br/><img src="./images/arrowleft.svg" alt="Seta para anterior" /></button>
+          </div>
+          <div class="nxt">
+            <button class="btn" onclick="next()">NEXT<br/><img src="./images/arrowright.svg" alt="Seta para próximo" /></button>
+            
+          </div>
+        </div>
+        <p>ADD TO CARD - $95.97</p>
+      </footer>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>

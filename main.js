@@ -65,3 +65,12 @@ function prev(){
 function setImg() {
   return slider_img.setAttribute('src', 'images/' + images[i])
 }
+
+// MENU - Mobile
+const btnMobile = document.getElementById('btn-mobile');
+
+btnMobile.addEventListener('click', function() {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('active') //toggle remove se já tem a classe e adiciona se não tem 
+  
+})

@@ -9,19 +9,31 @@ html {
 body {
   background-color: #e5e5e5;
 }
+
+button{
+  cursor: pointer;
+}
+
+.container {
+  min-width: 700px;
+  max-width: 1200px;
+  margin: auto;
+}
+
 header {
   display: flex;
   align-items: center;
   margin-top: 2rem;
-  width: 100vw;
   height: 4.6rem;
   justify-content: space-evenly;
 }
-
+header .menu-mobile{
+  display: none !important;
+}
 header .items {
   list-style: none;
   display: flex;
-  gap: 8rem;
+  gap: 6rem;
   justify-content: center;
 }
 header .items a {
@@ -39,20 +51,22 @@ header .icons {
   gap: 2rem;
 }
 
-.container {
+main {
   display: flex;
   align-items: center;
-  width: 80vw;
-}
-section {
-  padding-left: 8vw;
+  justify-content: space-between;
   padding-top: 5rem;
-  position: relative;
+}
+
+section {
   display: flex;
   align-items: center;
-  width: 33vw;
 }
-section .informations .categorie {
+
+section .informations{
+  width: 31rem;
+}
+section .informations span {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #131212;
   font-size: 1.5rem;
@@ -79,29 +93,30 @@ section .informations .description {
   letter-spacing: 0.1rem;
   line-height: 2rem;
 }
-section .informations .video {
+section .informations a{
   display: flex;
-  width: fit-content;
   align-items: center;
-}
-section .informations .video span {
   text-decoration: none !important;
-  margin-left: 1rem;
+  gap: 2rem;
+}
+section .informations span:last-child {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: #131212;
 }
-section .picture {
-  position: absolute;
-  object-fit: cover;
-  z-index: -1;
-  padding-left: 22vw;
-  padding-top: 12rem;
+section .picture{
+position: absolute;
+z-index: -1;
+margin-left: auto;
+top: 12rem;
+width: 100%;
+left: 0;
+right: 0;
+text-align: center;
 }
 
 aside {
-  padding-left: 45vw;
   padding-top: 8rem;
 }
 aside p {
@@ -125,7 +140,6 @@ aside .sizes button {
   width: 4rem;
   height: 4rem;
   transition: filter 0.2s;
-  cursor: pointer;
   border-width: 0.1rem;
   border-color: #e4dcdc;
 }
@@ -141,7 +155,6 @@ aside .colors button {
   width: 4rem;
   height: 4rem;
   transition: filter 0.2s;
-  cursor: pointer;
 }
 aside .colors button{
   border: 2px solid transparent;
@@ -168,36 +181,118 @@ aside .colors #white {
 }
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  height: 10rem;
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
-
+footer .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+footer .buttons div{
+  display: flex;
+  flex-direction: column;
+}
 footer button {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   border: none;
   background-color: #e5e5e5;
-  margin-left: 1rem;
 }
 
-footer .prev button {
-  margin-right: 5rem;
-  cursor: pointer;
-}
-footer .nxt button {
-  cursor: pointer;
-}
 footer p {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  margin-left: 60vw;
 }
 
 aside .sizes button.selectButton {
   background-color: #b1b1b1;
+}
+
+
+/* Responsividade */
+
+@media(max-width: 1000px){
+  .container{
+    display: flex;
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    width: 90%;
+    justify-content: space-between;
+  }
+  #menu{
+    position: fixed;
+    top: 90px;
+    background-color: #e5e5e5;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    left: -2000;
+    visibility: hidden;
+  }
+
+  #menu.active{
+    top: 90px;
+    z-index: 1;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    padding-left: 50px;
+    visibility: visible;
+  }
+  #menu .items{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+  }
+  header .menu-mobile {
+    display: flex !important;
+    
+  }
+  header .menu-mobile button{
+    border: none;
+    background-color: #e5e5e5;
+  }
+  header .menu-mobile button img{
+    height: 50px;
+    width: 50px;
+   }
+  section .picture{
+    position: relative;
+    z-index: 0;
+    margin-left: auto;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10rem;
+    padding-top: 0;
+  }
 }
